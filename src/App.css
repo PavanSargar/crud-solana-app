@@ -1,38 +1,73 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #fefefe;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputs {
+  height: 400px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background-color: grey;
 }
 
-.App-link {
-  color: #61dafb;
+.inputs input {
+  width: 250px;
+  height: 50px;
+  font-size: 1rem;
+  margin: 10px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+button {
+  margin-top: 3%;
+  height: 50px;
+  width: 250px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(48, 48, 48);
+  color: #fefefe;
+  
+}
+button:hover {
+  background-color: #fefeef;
+  color: #000;
+  cursor: pointer;
+}
+
+.friend-list {
+  margin: 2% 0;
+
+}
+.friend-card {
+  margin: 2%;
+}
+
+.friend-card-btn {
+  margin: 2%;
+  height: 40px;
+  width: 80px;
+}
+
+.modal-input {
+  margin: 2%;
+}
+.modal-footer {
+    display: flex;
+    flex-wrap: nowrap;
 }
